@@ -1,8 +1,12 @@
+import { Content } from "./Component/Content/Content";
+import ThemeContextProvider from "./Context/ThemeContext";
 
 function App() {
   return (
     <div className="App">
-      <h1>Bonjour</h1>
+      <ThemeContextProvider>
+        <Content/>
+      </ThemeContextProvider>
     </div>
   );
 }
