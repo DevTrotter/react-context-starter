@@ -5,13 +5,13 @@ import { ThemeContext } from '../../Context/ThemeContext'
 
 export const Content = () => {
 
-    const { theme } = useContext(ThemeContext)
+    const {theme , toggleTheme} = useContext(ThemeContext)
     
     return (
-        <StyledContent>
+        <StyledContent colory={theme}>
             <BtnToggle/>
             <h1>Sint ullamco incididunt irure mollit ea ea cupidatat velit sit quis cillum.</h1>
-            <p className='content-txt'>
+            <p className='content-txt' >
                 Sit id commodo velit nulla consectetur quis adipisicing nostrud velit excepteur consectetur duis. 
                 Laborum amet cupidatat commodo aute. Minim esse anim aute ea mollit pariatur nulla culpa laboris Lorem eu sint commodo. 
                 Commodo culpa commodo mollit est ipsum aute sunt proident amet consectetur sunt officia. Aliqua excepteur veniam aute amet esse minim.
@@ -23,6 +23,7 @@ export const Content = () => {
                 Qui laboris non sint id ut sit amet incididunt officia id aliqua. Consectetur Lorem eiusmod laborum eu exercitation minim Lorem ad occaecat ullamco aute magna.
                 Nulla anim eiusmod esse consectetur excepteur do enim officia adipisicing ullamco id aliqua. Commodo id esse adipisicing magna pariatur. Exercitation ex Lorem adipisicing duis anim consectetur.
             </p>
+            <div className='modal-background'></div>
         </StyledContent>
     )
 }
